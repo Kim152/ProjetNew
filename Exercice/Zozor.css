@@ -1,0 +1,160 @@
+#bloc_page{
+	width:900px;
+	margin:auto;
+}
+
+body{
+	background-image: url(fond_jaune.png);
+	font-family: 'Trebuchet MS', Arial, Sans serif;
+	color:181818;
+
+}
+/* polices utilisées */;
+@font-face{
+	font-family: Trebuchet MS
+}
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*HEADER*/
+.logo{
+	float:left;
+}
+
+.ligne{
+	width: 100%;
+	max-height: 0.3%;
+	height: 0.3%;				/*repeat ne fonctionne pas*/
+}
+
+nav li{
+	list-style-type: none;
+	display:inline;
+}
+
+header{
+	display:flex;
+	align-items: flex-end;
+	justify-content:space-between;
+	font-family: Dayrom;
+	font-size: 1em;
+}
+
+a:focus{
+	color:red;
+	text-decoration:underline;
+}
+
+h1{
+	text-align: right;
+}
+
+li{
+	margin-right: 15px;
+}
+
+a{
+	color:black;
+	text-decoration:none;				
+	font-size: 1.5em;
+}
+
+em{
+	font-family:BallParkWeiner;
+	font-size: 2em
+}
+
+
+/* BANNIERE*/
+
+.sanfrancisco{
+	
+}
+
+.retour{
+	background-color:rgba(0,0,0,0.7);
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	color:white;
+	display:flex;
+	align-items: flex-end;
+	justify-content:space-between;
+	font-size:0.8em;
+	font-family: Trebuchet MS;
+	position:;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.cfarticle{
+	background:linear-gradient(white 0.2%,red 99.8%);
+	padding: 8px 8px 8px 8px;
+	border-radius: 5px;
+	color:white;
+	font-size:1em;
+	font-family: Trebuchet MS;
+}
+
+/*SECTION*/
+
+.epingle{
+	float:left;
+}
+
+section aside div p{	
+	width: 3%;
+	margin-right:20px;
+}
+
+section aside{
+	margin-left: 35px;
+}
+
+section p{
+	font-family: Trebuchet MS;
+	font-size: 0.7em;
+}
+
+aside div{
+	display:flex;
+}
+
+article{
+	text-align: justify;
+}
+
+section{
+	font-family: Dayrom;
+	display:flex;
+}
+
+h2{
+	text-decoration: none;
+	font-size:1.5em;
+}
