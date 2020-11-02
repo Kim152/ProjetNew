@@ -6,10 +6,13 @@
 body{
 	background-image: url(fond_jaune.png);
 	font-family: 'Trebuchet MS', Arial, Sans serif;
-	color:#181818;
+	color:181818;
 
 }
 /* polices utilisées */;
+@font-face{
+	font-family: Trebuchet MS
+}
 
 @font-face
 {
@@ -35,24 +38,12 @@ body{
     font-style: normal;
 }
 
-#bloc_page
-{
-	width: 900px;
-	margin: auto;
-}
-/*HEADER*/
 
-#logo
-{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
+/*------------------------------------------------------------------HEADER----------------------------------------------------------------------------------------*/
 
-#logo img
-{
-    width: 90px;
-    height: 40px;
+.logo{
+	float:left;
+
 }
 
 .ligne{
@@ -60,10 +51,19 @@ body{
 	max-height: 0.3%;
 	height: 0.3%;				/*repeat ne fonctionne pas*/
 }
+.carnets{
+	clear:both;
+	font-weight: normal;
+}
 
 nav li{
 	list-style-type: none;
 	display:inline;
+}
+
+header article {
+	position: relative;
+	top:15px;
 }
 
 header{
@@ -72,24 +72,31 @@ header{
 	justify-content:space-between;
 	font-family: Dayrom;
 	font-size: 1em;
+	margin-right: 3em;
+	margin-left: 3em;
 }
 
-header h1
-{
-    font-family: 'BallparkWeiner', serif;
-    font-size: 2.5em;
-    font-weight: normal;
-    margin: 0 0 0 20px;
+h1 em{
+	position:relative;
+	left: 30px;
+	top:40px;
+	right:5px;
+	text-align: right;
+	font-size: 2em;
+	font-family:BallParkWeiner;
 }
-
 
 a:focus{
-	color:red;
+	color: #770001;
 	text-decoration:underline;
 }
 
+
+
 h1{
-	text-align: right;
+	position:relative;
+	right:30px;
+	font-size: 1.5em;
 }
 
 li{
@@ -102,53 +109,98 @@ a{
 	font-size: 1.5em;
 }
 
-em{
-	font-family:BallParkWeiner;
-	font-size: 2em
+
+
+/*---------------------------------------------------------------------------BANNIERE-------------------------------------------------------------------------------------------*/
+
+.zozor{
+	border: solid;
+	color:black;								/*FONCTIONNE PAS*/
 }
 
-
-/* BANNIERE*/
-
-#banniere_image{
+#banniere{	
+	left:50px;
 	height: 200px;
-    background: url(sanfrancisco.jpg) no-repeat;
-    position: relative;
-	box-shadow: 0px 4px 4px #1c1a19;
-    margin-bottom: 25px;
+	width: 89%;
+	background:url(sanfrancisco.jpg) no-repeat;
+	position:relative;	
+	box-shadow: 5px, 5px,5px #2F4F4F;
+	margin-bottom:10px;
+	border-radius:5px;	
+
 }
 
-#banniere_description{
-	position: absolute;
-	width: 100%;
-    height: 30px;
-    padding-top: 15px;
-	padding-left: 4px;
-	color: white;
-    background-color: rgba(0,0,0,0.8);
+.retour{ 
+	position:absolute;
+	bottom: -8%;
+	left: 0%;
+	background-color:rgba(24,32,35,0.6);
+	color:rgba(255,255,255,0.7);
+	border-radius:5px;
+	padding-top: 20px;
+	padding-right:490px;
+	padding-bottom:15px;
+	padding-left: 10px;
+	white-space: nowrap;	
 }
+
 .cfarticle{
-	background:linear-gradient(white 0.2%,red 99.8%);
-	padding: 8px 8px 8px 8px;
+	position:absolute;
+	left: 85%;
+	bottom:4%;
+	background:linear-gradient(#FFFF, #851a1c);
+	padding: 6px 8px 8px 8px;
 	border-radius: 5px;
 	color:white;
 	font-size:1em;
 	font-family: Trebuchet MS;
 }
 
-/*SECTION*/
+/*------------------------------------------------------------------------------SECTION---------------------------------------------------------------------------------------*/
+
+
+section aside .bulle{
+	position: relative;
+	left:-21px;
+	bottom:160px;
+}
 
 .epingle{
 	float:left;
 }
 
-section aside div p{	
+section aside div p{
+	margin:3.5px;
+}
+
+section aside div {	
 	width: 3%;
-	margin-right:20px;
+	padding:0px;
+	margin-left:-8px;
+}
+
+section aside .img_zozor{
+	border:solid;
+	border-width: 1px;
+}
+
+section aside p{
+	color:white;
+	text-align: justify;
 }
 
 section aside{
+	width: 25%;
+	height: 50%;
+	min-width:25%;
+	max-width: 30%;
+	max-height:30%;
+	min-height: 30%;
 	margin-left: 35px;
+	background-color: #6f6963;
+	padding: 0px 10px 2px 10px;
+	border-radius: 5px;
+	margin-right: 3em;
 }
 
 section p{
@@ -160,8 +212,10 @@ aside div{
 	display:flex;
 }
 
-article{
+section article{
 	text-align: justify;
+	margin-left: 3em;
+
 }
 
 section{
@@ -169,7 +223,98 @@ section{
 	display:flex;
 }
 
-h2{
+h3{	position:relative;
+	left:-6px;
+	text-align: left;
+	color:white;
+	font-weight: normal;
+	white-space: nowrap; /* empêche une phrase d'être coupée*/
+	}
+
+h2{	
+	position:relative;
+	left:5px;
 	text-decoration: none;
 	font-size:1.5em;
+}
+
+
+
+/*-------------------------------------------------------------------------------------FOOTER-----------------------------------------------------------------------------------------*/
+
+.top{
+	position:relative;
+	bottom:23px;
+	left:50%;
+}
+
+
+footer nav li{
+	font-family:trebuchet MS;
+	font-size:0.5em;
+	line-height: 20px;
+}
+
+footer nav a{
+	color:#9d453e;
+}
+footer div p{
+	font-family:trebuchet MS;
+	font-size:0.7em;
+}
+
+footer .photosfooter p{
+	margin-right: 5px;
+	border:solid;
+	border-width: 1px;
+	color:black;
+
+}
+
+footer .photosfooter{	
+	display:flex;
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	max-width: 50px;
+	min-height: 50px;
+	max-height: 50px;
+}
+
+footer .listefooter{
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;				/*CREER 2 COLONNES*/
+	column-gap: 150px;						/*MOZ=FIREFOX WEBKIT=CHROME SAFARI ET OPERA */
+	-moz-column-gap: 150px; 					
+	-webkit-column-gap: 150px;
+	white-space: nowrap; /* empêche une phrase d'être coupée*/
+
+}
+
+
+footer nav{
+	width: 30%;
+	text-align: left;
+	margin-left: 50px;
+}
+
+footer div{
+	width: 30%;
+}
+
+footer{
+	display:flex;
+	justify-content: space-between;
+	margin-right: 100px;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+	
+
+h4{
+	font-family:Dayrom;
+	text-decoration: none;
+	font-weight: normal;
+	font-size:1em;
 }
